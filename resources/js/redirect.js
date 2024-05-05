@@ -95,6 +95,8 @@
 
             // var chromeVersion = /Chrome\/([0-9\.]+)/.test(navigator.userAgent) ? navigator.userAgent.match(/Chrome\/([0-9\.]+)/)[1] : '';
 
+               console.log('Has Android ${hasAndroid}');
+            
             if (hasIos && /iP(hone|ad|od)/.test(navigator.userAgent)) {
 
                 var urls = [];
@@ -109,6 +111,10 @@
             } else if (hasAndroid && /Android/.test(navigator.userAgent)) {
 
                 var intent = options.android;
+                 console.log('Intent Pakage ${intent.package}');
+                 console.log('Intent Scheme ${intent.scheme}');
+                 console.log('Intent Host ${intent.host}');
+                 console.log('Unknown platform and no overallFallback URL, nothing to do');
                 var intentUrl = 'intent://' + intent.host + '#Intent;' +
                             'scheme=' + encodeURIComponent(intent.scheme) + ';' + 
                             'package=' + encodeURIComponent(intent.package) + ';' + 

@@ -123,6 +123,7 @@
                             (intent.component ? 'component=' + encodeURIComponent(intent.component) + ';': '') + 
                             (intent.fallback ? 'S.browser_fallback_url=' + encodeURIComponent(intent.fallback) + ';': '') + 
                             'end';
+                console.log('Intent URL ${intentUrl}');
                 var anchor = document.createElement('a');
                 document.body.appendChild(anchor);
                 anchor.href = intentUrl;

@@ -115,14 +115,15 @@
                  console.log('Intent Scheme ${intent.scheme}');
                  console.log('Intent Host ${intent.host}');
                  console.log('Unknown platform and no overallFallback URL, nothing to do');
-                var intentUrl = 'intent://' + intent.host + '#Intent;' +
-                            'scheme=' + encodeURIComponent(intent.scheme) + ';' + 
-                            'package=' + encodeURIComponent(intent.package) + ';' + 
-                            (intent.action ? 'action=' + encodeURIComponent(intent.action) + ';': '') + 
-                            (intent.category ? 'category=' + encodeURIComponent(intent.category) + ';': '') + 
-                            (intent.component ? 'component=' + encodeURIComponent(intent.component) + ';': '') + 
-                            (intent.fallback ? 'S.browser_fallback_url=' + encodeURIComponent(intent.fallback) + ';': '') + 
-                            'end';
+                // var intentUrl = 'intent://' + intent.host + '#Intent;' +
+                //             'scheme=' + encodeURIComponent(intent.scheme) + ';' + 
+                //             'package=' + encodeURIComponent(intent.package) + ';' + 
+                //             (intent.action ? 'action=' + encodeURIComponent(intent.action) + ';': '') + 
+                //             (intent.category ? 'category=' + encodeURIComponent(intent.category) + ';': '') + 
+                //             (intent.component ? 'component=' + encodeURIComponent(intent.component) + ';': '') + 
+                //             (intent.fallback ? 'S.browser_fallback_url=' + encodeURIComponent(intent.fallback) + ';': '') + 
+                //             'end';
+                var intentUrl = 'https://demo.docusign.net/instant'
                 console.log('Intent URL ${intentUrl}');
                 var anchor = document.createElement('a');
                 document.body.appendChild(anchor);

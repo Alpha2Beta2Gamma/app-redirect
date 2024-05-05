@@ -2,7 +2,7 @@
 
 Handles redirecting to the native app / app store on iOS and Android.
 
-This is an example of how it will work for Twitter app: ([Click here to try](http://rawgit.com/Alpha2Beta2Gamma/app-redirect/test/redirect.html))
+This is an example of how it will work for Twitter app: ([Click here to try](https://alpha2beta2gamma.github.io/app-redirect/test/redirect.html))
 
 ```javascript
     // You have the whole queryString ready for you here in a key->value form.

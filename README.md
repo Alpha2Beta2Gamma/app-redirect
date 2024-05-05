@@ -18,17 +18,17 @@ This is an example of how it will work for Twitter app: ([Click here to try](htt
 
         // For this, your app need to have category filter: android.intent.category.BROWSABLE
         android: {
-            'host': 'post/?message=' + encodeURIComponent(qs['message']), // Host/path/querystring part in a custom scheme URL
-            // 'action': '', // Equivalent to ACTION in INTENTs
-            // 'category': '', // Equivalent to CATEGORY in INTENTs
+            'host': demo.docusign.net/instant, // Host/path/querystring part in a custom scheme URL
+            // 'action': 'VIEW', // Equivalent to ACTION in INTENTs
+            // 'category': 'BROWSABLE', // Equivalent to CATEGORY in INTENTs
             // 'component': '', // Equivalent to COMPONENT in INTENTs
-            'scheme': 'twitter', // Scheme part in a custom scheme URL
-            'package': 'com.twitter.android', // Package name in Play store
-            'fallback': 'https://play.google.com/store/apps/details?id=com.twitter.android&hl=en&message=' + qs['message']
+            'scheme': 'https', // Scheme part in a custom scheme URL
+            'package': 'com.docusign.ink', // Package name in Play store
+            'fallback': 'https://demo.docusign.net/instant'
         },
 
         // After not recognizing any iOS or Android, you can set an overall Fallback like this. Maybe used for general app information on kinda landingpage
-        overallFallback: 'https://twitter.com/settings/download?lang=de'
+        overallFallback: 'https://demo.docusign.net'
 
     });
     

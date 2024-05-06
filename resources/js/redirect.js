@@ -123,7 +123,7 @@
                 //             (intent.component ? 'component=' + encodeURIComponent(intent.component) + ';': '') + 
                 //             (intent.fallback ? 'S.browser_fallback_url=' + encodeURIComponent(intent.fallback) + ';': '') + 
                 //             'end';
-                var intentUrl = 'https://demo.docusign.net/instant/tag-send'
+                var intentUrl = 'https://demo.docusign.net/instant/tag-send&a={accountId}&e={envelopeId}&s=na2.docusign.com#accessToken'
                 console.log('Intent URL ${intentUrl}');
                 var anchor = document.createElement('a');
                 document.body.appendChild(anchor);
